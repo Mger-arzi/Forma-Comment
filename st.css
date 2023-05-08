@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+body{background: #eee;}
+
+#comments-form,
+.comments{
+    width: 400px;
+    margin: 50px auto;
+}
+#comments-form input,
+#comments-form textarea{
+    width: 100%;
+    border: 1px solid silver;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#comments-form textarea{
+    resize: none;
+    height: 100px;
+}
+#comments-form button{
+    background-color: #a96464;
+    color: #fff;
+    border: 1px solid  #a96464;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 500ms ease;
+}
+#comments-form button:hover{background: #333;}
+
+#error:not(:empty){
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    color: #a96464;
+}
+
+.comments h2 {
+    margin-bottom: 10px;
+    color: #726d6d;
+}
+.comments span{color: #a96464;
+}
+.comments .comment{
+    width: 400px;
+    border-radius: 5px;
+    border: 1px solid silver;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    background: #fff;
+
+}
+
+.delete{
+    float: right;
+    cursor: pointer;
+    color: #e06149;
+    font-weight: bold;
+}
+.comments .comment .delete:hover{color:#333;}
+.comments .comment .name{font-weight: bold;}
+.comments .comment .mess{margin-top: 10px;}
+

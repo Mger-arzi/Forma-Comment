@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <form id="comments-form" autocomplete="off" >
+        <input type="text" name="name" placeholder="Введите имя">
+        <textarea  name="comments" placeholder="Введите сообшение" ></textarea>
+        <button type="button">Отправить</button>
+        <div id="error"></div>
+    </form>
+
+    <section class="comments">
+        <h2>Комментарии(<span class="count">0</span>)</h2>
+        <div id="comments">Пока комментариев нет</div>
+    </section>
+
+
+    <script src="chek.js"></script>
+</body>
+</html>
